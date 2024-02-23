@@ -10,7 +10,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: bsky-pds
 resources:
-  - github.com/general-programming/kustomize-atproto-pds?ref=main
+  - github.com/general-programming/kustomize-atproto-pds?ref=v0.0.1 # main can be used if you are brave
   - ingress.yaml # bring your own ingress
   - secret.yaml # generate your own secret.yaml below or use your choice of secret store
 patches:
